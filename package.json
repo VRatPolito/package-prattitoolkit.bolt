@@ -12,9 +12,9 @@
     "com.vratpolito.prattitoolkit": "1.0.0"
   },
   "repository": {
-    "url": "https://github.cds.internal.unity3d.com/unity/com.unity.animation.rigging.git",
+    "url": "https://github.com/VRatPolito/package-prattitoolkit.bolt.git",
     "type": "git",
-    "revision": "536ae6adeb6f1066ee89b6938f6ba5828ea92e5f"
+    "revision": "9d9f8755d60d722dbf1e2e32495cebbe45d58825"
   },
   "samples": [
     {
