@@ -1,0 +1,26 @@
+{
+  "name": "com.vratpolito.prattitoolkit.bolt",
+  "displayName": "Prattitoolkit Bolt Scaffolding",
+  "version": "1.0.0",
+  "unity": "2018.4",
+  "description": "TODO",
+  "keywords": [
+    "Utility"
+  ],
+  "category": "Utility",
+  "dependencies": {
+    "com.vratpolito.prattitoolkit": "1.0.0"
+  },
+  "repository": {
+    "url": "https://github.cds.internal.unity3d.com/unity/com.unity.animation.rigging.git",
+    "type": "git",
+    "revision": "536ae6adeb6f1066ee89b6938f6ba5828ea92e5f"
+  },
+  "samples": [
+    {
+      "displayName": "Flow Examples",
+      "description": "Flow examples from EPOV",
+      "path": "Samples~/EPOV"
+    }
+  ]
+}
