@@ -1,0 +1,16 @@
+{
+    "name": "PrattiToolkit.Bolt",
+    "rootNamespace": "",
+    "references": [
+        "GUID:b93084ae461bd7c4d9bdec07481fe72a"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
