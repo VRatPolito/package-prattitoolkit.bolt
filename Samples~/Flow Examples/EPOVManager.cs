@@ -10,9 +10,8 @@ using Unity.VisualScripting;
 using Bolt;
 # endif
 using VRatPolito.PrattiToolkit;
+using VRatPolito.PrattiToolkit.VR;
 using System.Collections.Generic;
-using System.Linq;
-using PrattiToolkit;
 using Unity.XR.CoreUtils;
 using UnityEngine.InputSystem;
 using static VRatPolito.PrattiToolkit.Bolt.BoltExtender;
@@ -39,15 +38,15 @@ public class EPOVManager : UnitySingleton<EPOVManager>
 
     protected EPOVManager() { }
 
-#region Events
+    #region Events
 
     //[SerializeField] private string BOLT_START_STRING = "StartTraining";
     public BoltEventWrapper _startTrainingEvent;
     public BoltEventWrapper _startTutorialEvent;
 
-#endregion
+    #endregion
 
-#region Editor Visible
+    #region Editor Visible
 
     [SerializeField] private bool _getMetaphorFromConfigFile = true;
     //[SerializeField] private Metaphor _metaphor;
@@ -65,7 +64,7 @@ public class EPOVManager : UnitySingleton<EPOVManager>
     public InputAction _repeatAction;
 
 
-#endregion
+    #endregion
 
     #region Private Members and Constants
 
@@ -75,9 +74,9 @@ public class EPOVManager : UnitySingleton<EPOVManager>
     private XROrigin _xrOrigin;
     //private List<MetaphoreController> _metaphoresInScene;
 
-#endregion
+    #endregion
 
-#region Properties
+    #region Properties
 
     public ScaffoldingMode Mode => _mode;
 
@@ -91,9 +90,9 @@ public class EPOVManager : UnitySingleton<EPOVManager>
 
     //public Logger Logger => _logger;
 
-#endregion
+    #endregion
 
-#region MonoBehaviour
+    #region MonoBehaviour
 
     private void Awake()
     {
@@ -134,13 +133,13 @@ public class EPOVManager : UnitySingleton<EPOVManager>
         StartCoroutine(WaitForLoggerRecording_CR());
     }
 
-#endregion
+    #endregion
 
-#region Public Methods
+    #region Public Methods
 
     public void DeactivateListed()
     {
-        _proscriptionList.ForEach(go=>go.SetActive(false));
+        _proscriptionList.ForEach(go => go.SetActive(false));
         //if (MetaphorPractical != null) MetaphorPractical.gameObject.SetActive(false);
     }
 
@@ -179,7 +178,7 @@ public class EPOVManager : UnitySingleton<EPOVManager>
 
     public void RepositionPlayer(Vector3 worldPos)
     {
-        worldPos -= _xrOrigin.Camera.transform.position ;
+        worldPos -= _xrOrigin.Camera.transform.position;
         worldPos.y = _xrOrigin.transform.position.y;
         _xrOrigin.transform.position += worldPos;
         //worldPos -= Player.instance.hmdTransform.position ;
@@ -225,9 +224,9 @@ public class EPOVManager : UnitySingleton<EPOVManager>
         InitBewEvents();
     }
 
-#endregion
+    #endregion
 
-#region Helper Methods
+    #region Helper Methods
 
     private void InitFlows()
     {
@@ -275,13 +274,13 @@ public class EPOVManager : UnitySingleton<EPOVManager>
         _startTutorialEvent.RegisterBoltEvent();
     }
 
-#endregion
+    #endregion
 
-#region Events Callbacks
+    #region Events Callbacks
 
-#endregion
+    #endregion
 
-#region Coroutines
+    #region Coroutines
 
     private IEnumerator WaitForLoggerRecording_CR()
     {
@@ -295,10 +294,10 @@ public class EPOVManager : UnitySingleton<EPOVManager>
     {
         yield return new WaitUntil(SkipPressed);
         VoiceoverController.CanSkip = ConfigurationLookUp.Instance.GetBool("Skippable", false);
-        if(VoiceoverController.CanSkip)
+        if (VoiceoverController.CanSkip)
             VoiceoverController.CanRepeat = false;
         _startTrainingEvent.Invoke();
     }
 
-#endregion
+    #endregion
 }
