@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: BEW_unit_vs
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"Kind":"Flow","collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[{"key":"Output","label":"Triggered","summary":null,"hideLabel":false}],"valueInputDefinitions":[{"hasDefaultValue":false,"defaultValue":null,"_type":"VRatPolito.PrattiToolkit.Bolt.BoltExtender+BoltEventWrapper","key":"BEW","label":"BEW","summary":"","hideLabel":false}],"valueOutputDefinitions":[],"title":"BoltEventWrapper_unit","summary":null,"pan":{"x":-68.86169,"y":-26.00507},"zoom":0.55,"elements":[{"type":"VRatPolito.PrattiToolkit.Bolt.BoltExtender+BoltEventWrapper","instance":true,"static":true,"defaultValues":{},"position":{"x":-150.0,"y":-72.0},"guid":"222b9d77-a176-4866-b1f4-86eded606614","$version":"A","$type":"Unity.VisualScripting.Expose","$id":"11"},{"coroutine":false,"defaultValues":{"name":{"$content":"","$type":"System.String"}},"position":{"x":247.0,"y":-4.0},"guid":"16d88cc2-d9a7-46ee-9002-dd28818400ec","$version":"A","$type":"Unity.VisualScripting.BoltUnityEvent","$id":"13"},{"defaultValues":{},"position":{"x":-372.0,"y":-13.0},"guid":"f7d6e378-b922-4fdd-9fce-f71d6e7aeb0a","$version":"A","$type":"Unity.VisualScripting.GraphInput","$id":"15"},{"defaultValues":{},"position":{"x":479.0,"y":0.0},"guid":"452f6580-01fa-4090-8b9a-394da442afba","$version":"A","$type":"Unity.VisualScripting.GraphOutput","$id":"17"},{"sourceUnit":{"$ref":"13"},"sourceKey":"trigger","destinationUnit":{"$ref":"17"},"destinationKey":"Output","guid":"036a4b60-c6ba-44c3-92aa-bcb84377a7bc","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"11"},"sourceKey":"BOLT_EVT_NAME","destinationUnit":{"$ref":"13"},"destinationKey":"name","guid":"1a890ea9-7aa1-4ddf-bbc1-7a4103777fdb","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"15"},"sourceKey":"BEW","destinationUnit":{"$ref":"11"},"destinationKey":"target","guid":"d43a7cd6-3380-4246-8c35-5f85b4179db0","$type":"Unity.VisualScripting.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []
