@@ -1,8 +1,10 @@
 {
-    "name": "PrattiToolkit.Bolt",
-    "rootNamespace": "",
+    "name": "VRatPolito.PrattiToolkit.Bolt",
+    "rootNamespace": "VRatPolito.PrattiToolit",
     "references": [
-        "GUID:b93084ae461bd7c4d9bdec07481fe72a"
+        "GUID:b93084ae461bd7c4d9bdec07481fe72a",
+        "GUID:21b0c8d1703a94250bfac916590cea4f",
+        "GUID:315d634a9ac6d460a9515f5a56be6311"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
@@ -10,7 +12,15 @@
     "overrideReferences": false,
     "precompiledReferences": [],
     "autoReferenced": true,
-    "defineConstraints": [],
-    "versionDefines": [],
+    "defineConstraints": [
+        "UNITY_2021_3_OR_NEWER"
+    ],
+    "versionDefines": [
+        {
+            "name": "Unity",
+            "expression": "2018.3",
+            "define": "USE_NEW_APIS"
+        }
+    ],
     "noEngineReferences": false
 }

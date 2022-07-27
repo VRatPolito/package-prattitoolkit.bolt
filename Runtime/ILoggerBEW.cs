@@ -4,10 +4,9 @@
  */
 using System.Collections;
 using System.Collections.Generic;
-using PrattiToolkit.Bolt;
 using UnityEngine;
 
-namespace PrattiToolkit.Bolt
+namespace VRatPolito.PrattiToolkit.Bolt
 {
 
     public interface ILoggerBEW

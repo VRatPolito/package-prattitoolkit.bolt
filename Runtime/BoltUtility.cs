@@ -1,18 +1,17 @@
 /* File Utility C# implementation of class Utility */
-// global declaration start
 
+#if UNITY_2021_3_OR_NEWER
+using Unity.VisualScripting;
+#else
 using Bolt;
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+#endif
 using UnityEngine.Events;
 using Component = UnityEngine.Component;
 using Debug = UnityEngine.Debug;
 using Math = System.Math;
 
 // global declaration end
-namespace PrattiToolkit.Bolt
+namespace VRatPolito.PrattiToolkit.Bolt
 {
     public static class BoltExtender
     {
